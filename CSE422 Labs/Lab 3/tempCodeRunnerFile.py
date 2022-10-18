@@ -1,0 +1,1 @@
+id = input("1. Enter your student id: ")
