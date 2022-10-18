@@ -27,7 +27,7 @@ def total_time(arr):
     return time, len(human)
 
 
-input_file2 = open("D:/MSAS/10th Semester/CSE422/Labs/Lab 1/input2.txt", 'r')
+input_file2 = open("input2.txt", 'r')
 lines = input_file2.readlines()
 arr2 = []
 for i in range(2, len(lines)):

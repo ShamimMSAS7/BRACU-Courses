@@ -68,7 +68,7 @@ def genetic_algorithm(population, transactions, count):
     return genetic_algorithm(new_population, transactions, count+1)
 
 
-input_file = open("D:/MSAS/10th Semester/CSE422/Labs/Lab 2/input.txt", 'r')
+input_file = open("input.txt", 'r')
 lines = input_file.readlines()
 transactions = []
 for i in range(1, int(lines[0])+1):

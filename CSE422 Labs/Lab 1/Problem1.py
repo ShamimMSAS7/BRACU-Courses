@@ -38,7 +38,7 @@ def max_affected(arr):
     return find_max(adj_affected)
 
 
-input_file1 = open("D:/MSAS/10th Semester/CSE422/Labs/Lab 1/input1.txt", 'r')
+input_file1 = open("input1.txt", 'r')
 arr1 = []
 for line in input_file1.readlines():
     arr1.append(line.split())
