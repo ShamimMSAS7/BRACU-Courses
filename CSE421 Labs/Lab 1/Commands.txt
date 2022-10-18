@@ -1,0 +1,22 @@
+//Erase and reload router 1
+Router>enable
+Router#erase startup-config
+Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]y[OK]
+Router#reload
+Proceed with reload? [confirm]y
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+//Erase and reload router 2
+Router>enable
+Router#erase startup-config
+Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]y[OK]
+Router#reload
+Proceed with reload? [confirm]y
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+//Perform basic configuration of router R1
+Router>enable
+Router#configure terminal
+Router(config)#hostname R1
+R1(config)#no ip domain-lookup
