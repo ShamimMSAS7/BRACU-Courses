@@ -1,0 +1,10 @@
+|LabHW2
+w => Selector1.IN1
+w => Y.D.DATAB
+w => Selector2.IN0
+w => Selector0.IN1
+clk => y~0.IN1
+resetn => y~1.IN1
+z <= z~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

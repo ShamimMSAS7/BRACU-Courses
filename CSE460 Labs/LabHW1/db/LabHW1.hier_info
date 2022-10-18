@@ -1,0 +1,57 @@
+|LabHW1
+F <= mux4to1:final_output.port0
+S0 => S0~0.IN1
+S1 => S1~0.IN1
+S2 => S2~0.IN1
+S3 => S3~0.IN1
+S4 => S4~0.IN1
+S5 => S5~0.IN1
+S6 => S6~0.IN1
+S7 => S7~0.IN1
+W0 => W0~0.IN1
+W1 => W1~0.IN1
+W2 => W2~0.IN4
+
+
+|LabHW1|mux2to1:first
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+S0 => Y~0.DATAB
+S1 => Y~0.DATAA
+W => Y~0.OUTPUTSELECT
+
+
+|LabHW1|mux2to1:second
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+S0 => Y~0.DATAB
+S1 => Y~0.DATAA
+W => Y~0.OUTPUTSELECT
+
+
+|LabHW1|mux2to1:third
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+S0 => Y~0.DATAB
+S1 => Y~0.DATAA
+W => Y~0.OUTPUTSELECT
+
+
+|LabHW1|mux2to1:fourth
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+S0 => Y~0.DATAB
+S1 => Y~0.DATAA
+W => Y~0.OUTPUTSELECT
+
+
+|LabHW1|mux4to1:final_output
+F <= F~2.DB_MAX_OUTPUT_PORT_TYPE
+S0 => F~2.DATAB
+S1 => F~1.DATAB
+S2 => F~0.DATAB
+S3 => F~0.DATAA
+W0 => always0~2.IN1
+W0 => always0~0.IN1
+W0 => always0~1.IN1
+W1 => always0~1.IN0
+W1 => always0~0.IN0
+W1 => always0~2.IN0
+
+
