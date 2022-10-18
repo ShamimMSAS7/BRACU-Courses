@@ -1,5 +1,3 @@
-#ID: 19101532
-# Name: MD. Shamim Mia
 
 import socket
 import threading
