@@ -1,0 +1,11 @@
+Fitter Status : Successful - Mon Jun 27 10:15:47 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : Lab03_2
+Top-level Entity Name : Lab03_2
+Family : FLEX10KE
+Device : EPF10K30ETC144-1
+Timing Models : Final
+Total logic elements : 2 / 1,728 ( < 1 % )
+Total pins : 4 / 102 ( 4 % )
+Total memory bits : 0 / 24,576 ( 0 % )
+Total PLLs : 0

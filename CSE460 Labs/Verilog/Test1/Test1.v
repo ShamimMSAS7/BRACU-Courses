@@ -1,0 +1,7 @@
+module Test1(w0, w1,y0, y1, z);
+input w0, w1, y0, y1;
+output reg z;
+always@(w0, w1, y0, y1)
+	if (w0==y0 | w0 == y1 | w1==y0 |w1==y1) z = 1;
+	else z=0;
+endmodule

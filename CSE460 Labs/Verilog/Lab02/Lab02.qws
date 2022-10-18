@@ -1,0 +1,17 @@
+[ProjectWorkspace]
+ptn_Child1=Frames
+[ProjectWorkspace.Frames]
+ptn_Child1=ChildFrames
+[ProjectWorkspace.Frames.ChildFrames]
+ptn_Child1=Document-0
+[ProjectWorkspace.Frames.ChildFrames.Document-0]
+ptn_Child1=ViewFrame-0
+[ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0]
+DocPathName=../../../../altera/81/quartus/common/advisors/oa_productivity_table.xml
+DocumentCLSID={5bf23940-a7d4-415b-9daa-f1a0a8ec6577}
+IsChildFrameDetached=False
+IsActiveChildFrame=True
+ptn_Child1=StateMap
+[ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0.StateMap]
+AFC_CMP_AP_NAME=Lab02
+AFC_PROJ_DB_PATH=C:/Users/19101532/Desktop/Lab02/db/Lab02.quartus_db

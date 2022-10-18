@@ -1,0 +1,17 @@
+|Lab04
+highway[0] <= state.S1.DB_MAX_OUTPUT_PORT_TYPE
+highway[1] <= state.S0.DB_MAX_OUTPUT_PORT_TYPE
+country[0] <= state.S4.DB_MAX_OUTPUT_PORT_TYPE
+country[1] <= state.S3.DB_MAX_OUTPUT_PORT_TYPE
+X => Selector1.IN3
+X => next_state~0.DATAB
+X => next_state~1.DATAB
+X => Selector0.IN2
+clk => state~0.IN1
+clear => next_state.S4.OUTPUTSELECT
+clear => next_state.S3.OUTPUTSELECT
+clear => next_state.S2.OUTPUTSELECT
+clear => next_state.S1.OUTPUTSELECT
+clear => next_state.S0.OUTPUTSELECT
+
+

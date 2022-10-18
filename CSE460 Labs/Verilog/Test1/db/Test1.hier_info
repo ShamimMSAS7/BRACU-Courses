@@ -1,0 +1,12 @@
+|Test1
+w0 => always0~1.IN0
+w0 => always0~0.IN0
+w1 => always0~5.IN1
+w1 => always0~3.IN1
+y0 => always0~3.IN0
+y0 => always0~0.IN1
+y1 => always0~5.IN0
+y1 => always0~1.IN1
+z <= always0~6.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,9 @@
+|Lab03_2
+w => Y.B.DATAB
+w => Selector0.IN0
+w => y.A.DATAIN
+clk => y~0.IN1
+resetn => y~1.IN1
+z <= z~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

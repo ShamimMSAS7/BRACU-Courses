@@ -1,0 +1,178 @@
+// Copyright (C) 1991-2008 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 8.1 Build 163 10/28/2008 SJ Web Edition"
+
+// DATE "08/01/2022 08:44:22"
+
+// 
+// Device: Altera EPF10K30ETC144-1 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for Custom Verilog HDL only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Test1 (
+	w0,
+	w1,
+	y0,
+	y1,
+	z);
+input 	w0;
+input 	w1;
+input 	y0;
+input 	y1;
+output 	z;
+
+wire gnd = 1'b0;
+wire vcc = 1'b1;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Test1_v.sdo");
+// synopsys translate_on
+
+wire \w1~dataout ;
+wire \w0~dataout ;
+wire \y0~dataout ;
+wire \y1~dataout ;
+wire \always0~74_combout ;
+
+
+// atom is at PIN_126
+flex10ke_io \w1~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\w1~dataout ),
+	.padio(w1));
+// synopsys translate_off
+defparam \w1~I .feedback_mode = "from_pin";
+defparam \w1~I .operation_mode = "input";
+defparam \w1~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_124
+flex10ke_io \w0~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\w0~dataout ),
+	.padio(w0));
+// synopsys translate_off
+defparam \w0~I .feedback_mode = "from_pin";
+defparam \w0~I .operation_mode = "input";
+defparam \w0~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_54
+flex10ke_io \y0~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\y0~dataout ),
+	.padio(y0));
+// synopsys translate_off
+defparam \y0~I .feedback_mode = "from_pin";
+defparam \y0~I .operation_mode = "input";
+defparam \y0~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_56
+flex10ke_io \y1~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\y1~dataout ),
+	.padio(y1));
+// synopsys translate_off
+defparam \y1~I .feedback_mode = "from_pin";
+defparam \y1~I .operation_mode = "input";
+defparam \y1~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at LC1_C27
+flex10ke_lcell \always0~74 (
+// Equation(s):
+// \always0~74_combout  = \w1~dataout  & (\y0~dataout  # \y1~dataout  # !\w0~dataout ) # !\w1~dataout  & (\w0~dataout  # !\y1~dataout  # !\y0~dataout )
+
+	.dataa(\w1~dataout ),
+	.datab(\w0~dataout ),
+	.datac(\y0~dataout ),
+	.datad(\y1~dataout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(gnd),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\always0~74_combout ),
+	.regout(),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \always0~74 .clock_enable_mode = "false";
+defparam \always0~74 .lut_mask = "eff7";
+defparam \always0~74 .operation_mode = "normal";
+defparam \always0~74 .output_mode = "comb_only";
+defparam \always0~74 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at PIN_46
+flex10ke_io \z~I (
+	.datain(\always0~74_combout ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(z));
+// synopsys translate_off
+defparam \z~I .feedback_mode = "none";
+defparam \z~I .operation_mode = "output";
+defparam \z~I .reg_source_mode = "none";
+// synopsys translate_on
+
+endmodule

@@ -1,0 +1,4 @@
+set tool_name "Custom Verilog HDL"
+set corner_file_list {
+	{{"Slow Model"} {Lab03.vo Lab03_v.sdo}}
+}
